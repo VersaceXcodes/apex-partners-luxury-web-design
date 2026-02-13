@@ -1,0 +1,15 @@
+{
+  "timestamp": 1771019104020,
+  "operation": {
+    "id": "settings:config:package"
+  },
+  "projectId": "apex-partners-luxury-web-design",
+  "files": [
+    {
+      "path": "/mnt/data/apex-partners-luxury-web-design/backend/.env",
+      "type": "text",
+      "size": 347,
+      "dependencies": false
+    }
+  ]
+}
