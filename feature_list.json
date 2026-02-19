@@ -1,0 +1,893 @@
+[
+  {
+    "id": "global-header-navigation",
+    "category": "navigation",
+    "description": "Sticky header with Apex Partners logo on left and navigation menu (Home, About, Services, Portfolio, Pricing, Contact) on right, plus 'Request a Quote' CTA button. Must remain visible on scroll and work across all pages.",
+    "steps": [
+      "Navigate to any page and verify header appears at top with logo left-aligned",
+      "Scroll down page and confirm header remains sticky/fixed at top",
+      "Click each navigation link and verify correct page loads",
+      "Click 'Request a Quote' button and verify it navigates to Contact page",
+      "Resize browser to mobile width and verify hamburger menu appears with CTA still visible"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 1,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "global-footer",
+    "category": "ui",
+    "description": "Footer appearing on all pages with brand statement, quick links to all pages, contact details placeholder, social icons (Instagram, LinkedIn), and copyright notice. Provides consistent site-wide navigation and brand reinforcement.",
+    "steps": [
+      "Navigate to any page and scroll to bottom to view footer",
+      "Verify footer contains statement: 'Apex Partners builds premium websites for brands that want to look sharp and convert.'",
+      "Click each quick link and confirm navigation to correct page",
+      "Verify Instagram and LinkedIn icons are present and styled correctly",
+      "Confirm copyright text is displayed"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 2,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "home-hero-section",
+    "category": "ui",
+    "description": "Above-the-fold hero section on homepage with headline 'Luxury websites built to convert.', subheadline explaining services, two CTA buttons (Request a Quote, View Work), and quick highlights row showing 'Fast turnaround', 'Mobile-first', 'Premium design', 'Built for growth'. Sets immediate brand tone and drives primary conversions.",
+    "steps": [
+      "Navigate to homepage and verify hero section loads immediately above fold",
+      "Confirm headline 'Luxury websites built to convert.' is prominently displayed",
+      "Verify subheadline text explains multi-page sites to admin panels for target clients",
+      "Click 'Request a Quote' button and verify navigation to Contact page",
+      "Click 'View Work' button and verify navigation to Portfolio page",
+      "Verify four quick highlights are displayed in a row below CTAs"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 3,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "home-trust-bar",
+    "category": "ui",
+    "description": "Trust bar displaying 'Trusted by:' followed by five client placeholder names/logos in monochrome style. Builds credibility and social proof for first-time visitors.",
+    "steps": [
+      "Scroll to trust bar section on homepage below hero",
+      "Verify 'Trusted by:' label is displayed",
+      "Confirm five client placeholders are shown in a horizontal row",
+      "Verify styling is muted/monochrome matching luxury aesthetic",
+      "Check responsive behavior on mobile shows appropriate layout"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 4,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "home-services-snapshot",
+    "category": "ui",
+    "description": "Six luxury-style service cards on homepage: Starter Websites, Business Websites, Restaurant Websites, Barber/Salon Websites, E-Commerce, Full-Service Platforms. Each card has title, description, and 'Learn more' link to Services page. Provides quick service overview and drives deeper engagement.",
+    "steps": [
+      "Navigate to services snapshot section on homepage",
+      "Verify all six service cards are displayed in grid layout",
+      "Confirm each card has title, descriptive text, and 'Learn more' link",
+      "Click 'Learn more' on any card and verify navigation to Services page",
+      "Test responsive layout on mobile to ensure cards stack appropriately",
+      "Verify luxury styling with proper spacing and typography"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 5,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "home-featured-portfolio",
+    "category": "ui",
+    "description": "Featured work section showing 3 portfolio projects (Noir Bistro, Crown Cut Studio, Silverline Studio) with thumbnails, project type, one-line result, and 'View project' button. Showcases quality of work and drives portfolio exploration.",
+    "steps": [
+      "Scroll to featured work section on homepage",
+      "Verify three project cards are displayed with thumbnails",
+      "Confirm each project shows name, type (Restaurant/Barber/Business), and result text",
+      "Click 'View project' button on any project and verify navigation to project detail",
+      "Check that placeholder images are monochrome/black and white",
+      "Test mobile layout for proper card stacking"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 6,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "home-why-apex-section",
+    "category": "ui",
+    "description": "Three-column section explaining value proposition: 'Design-led. Development-strong. Business-focused.' with details on luxury design, clean code, and conversion focus. Differentiates agency and addresses client concerns.",
+    "steps": [
+      "Navigate to 'Why Apex Partners' section on homepage",
+      "Verify three columns are displayed with equal spacing",
+      "Confirm first column covers luxury design aspects",
+      "Confirm second column covers development/technical quality",
+      "Confirm third column covers business/conversion focus",
+      "Test responsive behavior shows columns stacking on mobile"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 7,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "home-process-preview",
+    "category": "ui",
+    "description": "Four-step process overview on homepage: Discovery, Design, Build, Launch. Each step has brief description. Provides transparency and sets expectations for client engagement.",
+    "steps": [
+      "Scroll to process section on homepage",
+      "Verify four steps are displayed in sequential order",
+      "Confirm each step has title and brief description",
+      "Verify step 1 is 'Discovery' with goals/audience/competitors text",
+      "Verify step 4 is 'Launch' with testing/handover/support text",
+      "Check visual styling matches luxury aesthetic with proper spacing"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 8,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "home-testimonials",
+    "category": "ui",
+    "description": "Three testimonial quotes with client names and business types (Restaurant Owner, Barber, Founder). Builds trust through social proof and demonstrates results across different client types.",
+    "steps": [
+      "Navigate to testimonials section on homepage",
+      "Verify three testimonial cards/quotes are displayed",
+      "Confirm each testimonial includes quote text, name, and business type",
+      "Verify styling is consistent with luxury theme",
+      "Check that testimonials are readable and properly formatted",
+      "Test mobile layout for testimonial display"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 9,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "home-final-cta-band",
+    "category": "ui",
+    "description": "Final conversion section with headline 'Ready to upgrade your online presence?', supporting text, primary 'Request a Quote' button, and secondary 'Email us' link. Last opportunity to convert homepage visitors.",
+    "steps": [
+      "Scroll to final CTA band at bottom of homepage",
+      "Verify headline and supporting text are displayed prominently",
+      "Click 'Request a Quote' button and confirm navigation to Contact page",
+      "Click 'Email us' link and verify it opens email client or navigates appropriately",
+      "Check styling matches luxury aesthetic with strong visual hierarchy",
+      "Test mobile responsiveness of CTA buttons"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 10,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "about-page-intro",
+    "category": "ui",
+    "description": "About page introduction with headline 'Built for brands that want to look premium.' and copy explaining agency positioning, from brochure sites to admin dashboards. Establishes credibility and scope of services.",
+    "steps": [
+      "Navigate to About page via main navigation",
+      "Verify headline is prominently displayed at top of page",
+      "Confirm copy explains range from simple websites to full platforms",
+      "Check that text mentions luxury look and business-first thinking",
+      "Verify typography and spacing match luxury aesthetic",
+      "Test page loads correctly on mobile devices"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 11,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "about-values-section",
+    "category": "ui",
+    "description": "Four core values section on About page: Clarity, Quality, Speed, Partnership. Each value has title and brief explanation. Communicates agency principles and working style to potential clients.",
+    "steps": [
+      "Scroll to values section on About page",
+      "Verify all four values are displayed (Clarity, Quality, Speed, Partnership)",
+      "Confirm each value has descriptive text explaining the principle",
+      "Check visual layout presents values in organized grid or list",
+      "Verify styling is consistent with luxury minimalist theme",
+      "Test responsive behavior on mobile"
+    ],
+    "priority": 3,
+    "passes": true,
+    "selected": true,
+    "order": 12,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "about-target-clients",
+    "category": "ui",
+    "description": "Section describing target client types: restaurants, barbers, salons, local services, modern brands seeking premium presence. Helps visitors self-identify and understand if agency is right fit.",
+    "steps": [
+      "Navigate to 'Who we work with' section on About page",
+      "Verify text lists restaurants, barbers, salons, local services, and brands",
+      "Confirm messaging emphasizes premium online presence",
+      "Check that section is clearly separated from other content",
+      "Verify typography and spacing are consistent",
+      "Test mobile display of this content"
+    ],
+    "priority": 3,
+    "passes": true,
+    "selected": true,
+    "order": 13,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "about-page-cta",
+    "category": "ui",
+    "description": "Call-to-action button on About page directing to quote request. Converts interested About page visitors into leads.",
+    "steps": [
+      "Scroll to bottom of About page",
+      "Verify 'Request a Quote' button is prominently displayed",
+      "Click button and confirm navigation to Contact page",
+      "Check button styling matches global CTA design",
+      "Test button hover state shows inverted colors",
+      "Verify button is accessible and visible on mobile"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 14,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "services-starter-website",
+    "category": "ui",
+    "description": "Detailed service block for Starter Website with 'Best for', 'What's included' (1-3 pages, mobile responsive, basic SEO, contact form, social links, map), and outcome statement. Helps clients understand entry-level offering.",
+    "steps": [
+      "Navigate to Services page",
+      "Locate Starter Website service block",
+      "Verify 'Best for' section mentions new businesses and personal brands",
+      "Confirm 'What's included' lists all 5 features (pages, responsive, SEO, form, social/map)",
+      "Verify outcome statement about professional online presence",
+      "Check styling and spacing match luxury aesthetic"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 15,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "services-business-website",
+    "category": "ui",
+    "description": "Detailed service block for Business Website with 'Best for', 'What's included' (4-6 pages, conversion-focused homepage, service sections, FAQs, speed optimization, SEO), and outcome. Targets service businesses needing lead generation.",
+    "steps": [
+      "Navigate to Business Website section on Services page",
+      "Verify 'Best for' targets service businesses needing leads",
+      "Confirm 'What's included' lists all features including conversion focus",
+      "Check that outcome mentions generating enquiries",
+      "Verify visual hierarchy separates this from other service blocks",
+      "Test mobile display of service details"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 16,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "services-restaurant-website",
+    "category": "ui",
+    "description": "Restaurant-specific service block with menu layouts, gallery, map/hours, book/order buttons linking to third-party platforms. Addresses specific needs of restaurant clients.",
+    "steps": [
+      "Locate Restaurant Website section on Services page",
+      "Verify 'Best for' mentions restaurants, cafés, takeaways",
+      "Confirm includes menu page, gallery, map, hours, and CTA buttons",
+      "Check outcome statement about luxury feel matching venue",
+      "Verify all features are clearly listed",
+      "Test responsive layout on mobile"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 17,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "services-barber-salon-website",
+    "category": "ui",
+    "description": "Barber/salon-specific service block with services/pricing layout, gallery, testimonials, local presence design, and 'Book now' button. Targets grooming industry clients.",
+    "steps": [
+      "Navigate to Barber/Salon Website section on Services page",
+      "Verify 'Best for' targets barbers, salons, grooming studios",
+      "Confirm includes services/pricing, gallery, testimonials, local design",
+      "Check mentions 'Book now' button linking to booking platform",
+      "Verify outcome about building trust instantly",
+      "Test mobile display of this service block"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 18,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "services-ecommerce-website",
+    "category": "ui",
+    "description": "E-commerce service block with storefront design, product/collection pages, conversion-focused UX, platform setup (Shopify/Woo). Targets brands selling products online.",
+    "steps": [
+      "Locate E-Commerce Website section on Services page",
+      "Verify 'Best for' mentions brands selling products online",
+      "Confirm includes storefront, product pages, conversion UX, platform setup",
+      "Check outcome statement about designed to sell",
+      "Verify mentions specific platforms like Shopify/WooCommerce",
+      "Test responsive display of service details"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 19,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "services-full-platform",
+    "category": "ui",
+    "description": "Full-Service Platform block describing custom features, dashboards, admin panels, database functionality, scalable architecture. Targets businesses needing complex systems.",
+    "steps": [
+      "Navigate to Full-Service Platform section on Services page",
+      "Verify 'Best for' mentions businesses needing systems",
+      "Confirm includes custom features, dashboards, admin tools, database functionality",
+      "Check mentions scalable architecture",
+      "Verify outcome about platform built for growth",
+      "Test mobile layout of this service block"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 20,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "services-addons-section",
+    "category": "ui",
+    "description": "Optional add-ons section listing maintenance, SEO, copywriting, branding/logos, hosting guidance. Provides upsell opportunities and comprehensive service awareness.",
+    "steps": [
+      "Scroll to add-ons section on Services page",
+      "Verify all five add-ons are listed (maintenance, SEO, copywriting, branding, hosting)",
+      "Confirm section is visually separated from main services",
+      "Check that add-ons are clearly marked as optional",
+      "Verify styling is consistent with page design",
+      "Test mobile display of add-ons list"
+    ],
+    "priority": 3,
+    "passes": true,
+    "selected": true,
+    "order": 21,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "process-page-timeline",
+    "category": "ui",
+    "description": "Process page with luxury timeline showing 5 steps: Kickoff & Discovery, Wireframe & Structure, High-end Design, Development & Testing, Launch & Support. Provides transparency about workflow and timeline expectations.",
+    "steps": [
+      "Navigate to Process page",
+      "Verify all five steps are displayed in sequential timeline format",
+      "Confirm each step has clear title and description",
+      "Check visual design uses luxury timeline styling",
+      "Verify timeline note about typical durations (1-2 weeks starter, 2-4 weeks standard, custom)",
+      "Test mobile display of timeline"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 22,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "pricing-page-tiers",
+    "category": "ui",
+    "description": "Pricing page showing six service tiers with 'Starting from' prices: Starter, Standard Business, Restaurant, Barber/Salon, E-Commerce (all with price placeholders), and Custom Platform (quote-based). Sets price expectations while maintaining flexibility.",
+    "steps": [
+      "Navigate to Pricing page",
+      "Verify all six pricing tiers are displayed",
+      "Confirm each tier shows 'Starting from €XXX' except Custom Platform",
+      "Check Custom Platform shows 'Quote-based'",
+      "Verify pricing note about final pricing depending on scope is displayed",
+      "Test mobile layout of pricing cards"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 23,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "pricing-page-disclaimer",
+    "category": "ui",
+    "description": "Pricing disclaimer note explaining that final pricing depends on pages, content, features, and timelines. Manages expectations and prevents pricing disputes.",
+    "steps": [
+      "Scroll to pricing disclaimer on Pricing page",
+      "Verify note text mentions pages, content, features, and timelines",
+      "Confirm text is clearly visible and readable",
+      "Check styling differentiates it from pricing tiers",
+      "Verify placement is logical (near pricing or at bottom)",
+      "Test mobile display of disclaimer"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 24,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "pricing-page-cta",
+    "category": "ui",
+    "description": "Request a Quote CTA button on Pricing page to convert pricing page visitors into leads.",
+    "steps": [
+      "Navigate to bottom of Pricing page",
+      "Verify 'Request a Quote' button is prominently displayed",
+      "Click button and confirm navigation to Contact page",
+      "Check button styling matches global CTA design",
+      "Test hover state shows proper interaction",
+      "Verify button is accessible on mobile"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 25,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "portfolio-page-grid",
+    "category": "ui",
+    "description": "Portfolio page with grid of 6-12 projects displaying thumbnails, project names, and types. Provides visual showcase of agency work and quality.",
+    "steps": [
+      "Navigate to Portfolio page",
+      "Verify grid displays between 6-12 project cards",
+      "Confirm each card shows thumbnail image, project name, and type",
+      "Check grid layout is responsive and maintains luxury aesthetic",
+      "Verify placeholder projects include Noir Bistro, Crown Cut Studio, etc.",
+      "Test mobile layout shows appropriate grid columns"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 26,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "portfolio-filters",
+    "category": "functional",
+    "description": "Filter buttons on Portfolio page for categories: Restaurants, Barbers/Salons, Business, E-Commerce, Platforms. Allows visitors to view relevant work for their industry.",
+    "steps": [
+      "Navigate to Portfolio page and locate filter buttons",
+      "Click 'Restaurants' filter and verify only restaurant projects display",
+      "Click 'Barbers/Salons' filter and verify filtering works",
+      "Click 'All' or reset and verify all projects display again",
+      "Test each filter category (Business, E-Commerce, Platforms)",
+      "Verify filter button styling shows active state"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 27,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "portfolio-case-study-view",
+    "category": "ui",
+    "description": "Individual case study pages/sections for each portfolio project with Overview, Goals, What we delivered, Result, and Screenshots. Provides detailed project context and demonstrates value delivery.",
+    "steps": [
+      "Click on any portfolio project from grid",
+      "Verify case study view opens with project details",
+      "Confirm all sections are present: Overview, Goals, Deliverables, Result, Screenshots",
+      "Check that screenshots/images are displayed properly",
+      "Verify navigation back to portfolio grid works",
+      "Test mobile display of case study layout"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 28,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "portfolio-placeholder-projects",
+    "category": "data",
+    "description": "Eight placeholder portfolio projects with names and types: Noir Bistro (Restaurant), Crown Cut Studio (Barber), Maison Café (Restaurant), Northmark Services (Business), Aurelia Skincare (E-Commerce), Silverline Studio (Premium Brand), District Dental (Local Service), Atlas Gym (Landing/Membership). Provides realistic content structure for launch.",
+    "steps": [
+      "Navigate to Portfolio page",
+      "Verify Noir Bistro project is present and labeled as Restaurant",
+      "Verify Crown Cut Studio is present and labeled as Barber",
+      "Confirm all eight placeholder projects are displayed",
+      "Check each project has appropriate category tag",
+      "Verify clicking each project opens its case study"
+    ],
+    "priority": 3,
+    "passes": true,
+    "selected": true,
+    "order": 29,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "contact-page-form",
+    "category": "functional",
+    "description": "Contact form with fields: Full name, Email, Business name, Industry dropdown (Restaurant/Barber/Salon/Local Service/E-Commerce/Other), Budget range dropdown, Timeline dropdown, Message textarea, and 'Send enquiry' button. Primary lead capture mechanism.",
+    "steps": [
+      "Navigate to Contact page",
+      "Verify all form fields are present and labeled correctly",
+      "Fill in Full name, Email, Business name, and Message fields",
+      "Click Industry dropdown and verify all six options are available",
+      "Click Budget range dropdown and verify options are present",
+      "Click Timeline dropdown and verify options are present",
+      "Click 'Send enquiry' button and verify form submission behavior"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 30,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "contact-page-headline",
+    "category": "ui",
+    "description": "Contact page headline 'Request a quote.' with supporting text explaining service range. Sets context for form submission.",
+    "steps": [
+      "Navigate to Contact page",
+      "Verify headline 'Request a quote.' is prominently displayed",
+      "Confirm supporting text mentions simple site or full platform",
+      "Check text mentions agency will guide the client",
+      "Verify typography matches luxury aesthetic",
+      "Test mobile display of headline section"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 31,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "contact-details-display",
+    "category": "ui",
+    "description": "Contact details section showing email (hello@apexpartners.com placeholder), social links, and location information. Provides alternative contact methods.",
+    "steps": [
+      "Scroll to contact details section on Contact page",
+      "Verify email address placeholder is displayed",
+      "Confirm social media links (Instagram, LinkedIn) are present",
+      "Check location information is displayed if included",
+      "Verify styling is consistent with luxury theme",
+      "Test mobile display of contact details"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 32,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "contact-form-mailto-action",
+    "category": "functional",
+    "description": "Form action configured to mailto:hello@apexpartners.com as placeholder since no backend. Ensures form can function even without backend processing.",
+    "steps": [
+      "Navigate to Contact page and fill out form completely",
+      "Click 'Send enquiry' button",
+      "Verify email client opens with pre-filled information OR appropriate fallback behavior",
+      "Check that form data is properly formatted in email",
+      "Test on different browsers for consistent behavior"
+    ],
+    "priority": 3,
+    "passes": true,
+    "selected": true,
+    "order": 33,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "faq-page-questions",
+    "category": "ui",
+    "description": "FAQ page with 8 questions and answers: website timeline, client requirements, hosting/domains, redesign capability, maintenance, booking/ordering systems, admin panels/dashboards, payment process. Addresses common client concerns and reduces friction.",
+    "steps": [
+      "Navigate to FAQ page",
+      "Verify all 8 FAQ items are displayed",
+      "Confirm question 1 addresses website timeline",
+      "Confirm question 7 addresses admin panels and dashboards",
+      "Check that answers are clear and informative",
+      "Verify styling uses luxury aesthetic with proper spacing"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 34,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "faq-accordion-interaction",
+    "category": "functional",
+    "description": "FAQ accordion/expandable functionality allowing users to click questions to reveal answers. Improves scanability and user experience.",
+    "steps": [
+      "Navigate to FAQ page",
+      "Click on first FAQ question",
+      "Verify answer expands/reveals below question",
+      "Click question again and verify answer collapses",
+      "Test multiple FAQs can be open simultaneously or only one at a time",
+      "Verify smooth animation transitions (150-250ms)"
+    ],
+    "priority": 3,
+    "passes": true,
+    "selected": true,
+    "order": 35,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "privacy-policy-page",
+    "category": "ui",
+    "description": "Simple Privacy Policy page with standard template text covering basic privacy practices and cookie/analytics usage. Provides legal compliance and transparency.",
+    "steps": [
+      "Navigate to Privacy Policy page (typically from footer link)",
+      "Verify page loads with privacy policy content",
+      "Confirm text covers data collection, usage, and cookies/analytics",
+      "Check that content is readable and properly formatted",
+      "Verify page styling matches site aesthetic",
+      "Test mobile display of policy text"
+    ],
+    "priority": 3,
+    "passes": true,
+    "selected": true,
+    "order": 36,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "mobile-responsive-layout",
+    "category": "ui",
+    "description": "All pages and components adapt to mobile screens with appropriate stacking, font sizing, and touch-friendly interactions. Ensures mobile-first approach as stated in brand positioning.",
+    "steps": [
+      "Open site on mobile device or resize browser to mobile width (320px-768px)",
+      "Navigate through all pages and verify layouts adapt appropriately",
+      "Check that text remains readable without horizontal scrolling",
+      "Verify buttons and links are touch-friendly (minimum 44px touch targets)",
+      "Test hamburger menu opens and closes properly on mobile",
+      "Confirm images scale appropriately without breaking layout"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 37,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "mobile-hamburger-menu",
+    "category": "navigation",
+    "description": "Hamburger menu icon appearing on mobile that opens navigation overlay with all menu items and CTA button. Provides mobile navigation while maintaining clean header.",
+    "steps": [
+      "Resize browser to mobile width or open on mobile device",
+      "Verify hamburger icon appears in header",
+      "Click/tap hamburger icon and verify menu overlay opens",
+      "Confirm all navigation links are present in mobile menu",
+      "Verify 'Request a Quote' CTA is visible in mobile menu",
+      "Click close icon or outside menu and verify menu closes"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 38,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "luxury-visual-styling",
+    "category": "ui",
+    "description": "Consistent luxury aesthetic across all pages: black (#0B0B0B) and white (#FFFFFF) palette, grey text (#B8B8B8), border grey (#1E1E1E), optional champagne gold accent (#C6A15B), serif headings (Playfair Display/Cormorant), sans body (Inter/Helvetica), generous spacing, thin separators. Establishes premium brand perception.",
+    "steps": [
+      "Navigate through all pages of site",
+      "Verify primary black (#0B0B0B) is used for backgrounds/primary elements",
+      "Confirm white (#FFFFFF) is used appropriately for contrast",
+      "Check grey text (#B8B8B8) is used for secondary content",
+      "Verify headings use elegant serif font (Playfair Display or similar)",
+      "Confirm body text uses modern sans-serif (Inter or similar)",
+      "Check spacing is generous with strong grid alignment"
+    ],
+    "priority": 1,
+    "passes": true,
+    "selected": true,
+    "order": 39,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "button-hover-states",
+    "category": "ui",
+    "description": "All buttons show inverted hover states (black to white, white to black) with smooth transitions. Provides interactive feedback matching luxury aesthetic.",
+    "steps": [
+      "Navigate to any page with buttons (Home, Contact, etc.)",
+      "Hover over primary CTA button and verify color inverts",
+      "Check transition is smooth (150-250ms)",
+      "Test secondary buttons also have hover states",
+      "Verify hover states work on all button types across site",
+      "Test focus states are visible for keyboard navigation"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 40,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "subtle-animations",
+    "category": "ui",
+    "description": "Subtle fade/slide animations on page elements with 150-250ms transitions. Adds polish and premium feel without being distracting.",
+    "steps": [
+      "Navigate to homepage and scroll through sections",
+      "Observe elements fading or sliding in as they enter viewport",
+      "Verify animations are subtle and not jarring",
+      "Check transition timing is between 150-250ms",
+      "Test animations work smoothly on different browsers",
+      "Verify animations don't cause performance issues on mobile"
+    ],
+    "priority": 3,
+    "passes": true,
+    "selected": true,
+    "order": 41,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "black-white-imagery",
+    "category": "ui",
+    "description": "All images use black and white photography (architecture, interiors, city, workspaces) with maximum one strong hero visual per page. Portfolio thumbnails are monochrome mockups. Maintains consistent luxury aesthetic.",
+    "steps": [
+      "Navigate through all pages and examine images",
+      "Verify all photography is black and white or monochrome",
+      "Confirm each page has maximum one hero image",
+      "Check portfolio thumbnails are monochrome mockups",
+      "Verify images match luxury aesthetic (architecture, interiors, etc.)",
+      "Test images load properly and are optimized"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 42,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "consistent-corner-radius",
+    "category": "ui",
+    "description": "Consistent corner radius treatment (6-10px subtle rounded OR sharp corners) applied to all cards, buttons, and containers. Maintains design system consistency.",
+    "steps": [
+      "Navigate through all pages examining UI elements",
+      "Check all buttons have consistent corner radius",
+      "Verify all cards use same corner radius treatment",
+      "Confirm containers and boxes follow same radius pattern",
+      "Check that choice (rounded vs sharp) is consistent site-wide",
+      "Test visual consistency across different components"
+    ],
+    "priority": 3,
+    "passes": true,
+    "selected": true,
+    "order": 43,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "page-meta-tags",
+    "category": "functional",
+    "description": "Each page has unique meta title and description optimized for SEO. Improves search visibility and click-through rates.",
+    "steps": [
+      "View page source or inspect head element on Home page",
+      "Verify unique meta title and description tags are present",
+      "Navigate to About page and verify different meta tags",
+      "Check Services, Portfolio, Pricing, Contact pages each have unique meta tags",
+      "Verify meta descriptions are compelling and include relevant keywords",
+      "Test Open Graph tags are present for social sharing"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 44,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "semantic-html-structure",
+    "category": "functional",
+    "description": "Proper H1/H2/H3 heading hierarchy on all pages for SEO and accessibility. Ensures content structure is logical and crawlable.",
+    "steps": [
+      "Inspect HTML structure of Home page",
+      "Verify single H1 tag is present (main headline)",
+      "Confirm H2 tags are used for major sections",
+      "Check H3 tags are used for subsections appropriately",
+      "Test heading hierarchy is logical and sequential",
+      "Verify all pages follow consistent heading structure"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 45,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "optimized-image-loading",
+    "category": "functional",
+    "description": "Images are optimized for fast loading with appropriate formats, compression, and lazy loading. Ensures fast page performance as promised in brand positioning.",
+    "steps": [
+      "Navigate to image-heavy pages (Home, Portfolio)",
+      "Check page load time is fast (under 3 seconds)",
+      "Verify images are compressed without visible quality loss",
+      "Test lazy loading - images below fold load as user scrolls",
+      "Check images use modern formats (WebP with fallbacks)",
+      "Test performance on slower connections"
+    ],
+    "priority": 2,
+    "passes": true,
+    "selected": true,
+    "order": 46,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  },
+  {
+    "id": "open-graph-image",
+    "category": "functional",
+    "description": "Black and white branded Open Graph image for social media sharing. Ensures professional appearance when site is shared on social platforms.",
+    "steps": [
+      "View page source and locate og:image meta tag",
+      "Verify Open Graph image URL is present",
+      "Test sharing site URL on Facebook or LinkedIn",
+      "Confirm branded black and white image appears in share preview",
+      "Check image dimensions are appropriate (1200x630px recommended)",
+      "Verify image loads quickly and displays correctly"
+    ],
+    "priority": 3,
+    "passes": true,
+    "selected": true,
+    "order": 47,
+    "status": "completed",
+    "completedAt": "2026-02-14T22:00:44.361Z"
+  }
+]

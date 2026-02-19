@@ -1,0 +1,574 @@
+You are an AI Software Engineer working on an existing project.
+
+## STARTUP SEQUENCE (do this first)
+1. Run `pwd` to verify you're in /app/expo
+2. Read /app/claude-progress.txt and run `git log --oneline -10` to understand recent progress
+3. Run `chmod +x /app/init.sh && /app/init.sh` to start dev servers
+4. Basic smoke test: verify the app loads by checking server logs
+5. Read /app/feature_list.json to see the feature list
+
+## IMPLEMENTATION ORDER - FRONTEND FIRST
+For each feature, ALWAYS build in this order to give users immediate visual feedback:
+
+1. **UI First**: Create the user interface components and screens FIRST
+   - Build visual components with placeholder/mock data
+   - Implement navigation and user flows
+   - Style and polish the UI for immediate visual impact
+
+2. **Types Second**: Define TypeScript types/interfaces for the data
+   - Create shared types that frontend and backend will use
+
+3. **Backend Last**: Implement server/API/database AFTER UI is working
+   - Connect the already-working UI to real backend
+   - Replace mock data with actual API calls
+
+## IMPLEMENTATION RULES
+- Work on ONLY ONE feature per session
+- Pick the highest-priority feature where "passes": false and "selected": true
+- Follow the FRONTEND FIRST order above when implementing
+- Implement it fully with proper error handling
+- Use Playwright MCP to browser test the feature before marking complete:
+  - Navigate to the app preview URL
+  - Interact with the feature (click buttons, fill forms, navigate screens)
+  - Verify expected behavior occurs and no errors appear
+  - Take a screenshot to confirm the feature is working
+- Only mark "passes": true in feature_list.json AFTER browser testing confirms it works
+- Update /app/claude-progress.txt with session notes
+- Leave the codebase in a clean, working state
+
+## Project Description (for context)
+APEX PARTNERS — Luxury Web Design & Development Agency Website (Full Brief)
+
+1) Brand identity + vibe
+
+Brand name: Apex Partners
+What we do: We design and build websites — from clean multi-page sites to full-service platforms with dashboards/admin panels (even if this agency site has no backend).
+Target clients: Restaurants, barbershops, local service businesses, creators, small–mid brands, and anyone needing a premium online presence.
+
+Theme: Luxury / minimalist / modern
+Style: Black + white, crisp typography, generous spacing, subtle motion
+Tone: Confident, professional, calm. Premium but not flashy.
+
+Brand keywords: premium, precise, modern, trusted, discreet, results-driven, high-converting.
+
+⸻
+
+2) Pages (site map)
+
+Build a static website with these pages:
+	1.	Home
+	2.	About
+	3.	Services
+	4.	Portfolio
+	5.	Process
+	6.	Pricing (Starting From)
+	7.	Contact
+	8.	FAQ (recommended)
+	9.	Legal: Privacy Policy (simple)
+
+Include: Header + Footer on every page
+
+⸻
+
+3) Global style system (tell the AI builder to follow this strictly)
+
+Palette:
+	•	Primary black: #0B0B0B
+	•	White: #FFFFFF
+	•	Secondary grey text: #B8B8B8
+	•	Border grey: #1E1E1E
+	•	Optional micro-accent (use sparingly): #C6A15B (champagne gold) OR keep purely monochrome
+
+Typography:
+	•	Headings: elegant serif (Playfair Display / Cormorant / similar)
+	•	Body: modern sans (Inter / Helvetica / similar)
+
+Layout rules:
+	•	Minimalist, spacious, luxury editorial look
+	•	Large margins + padding, strong grid
+	•	Thin separators
+	•	Subtle animations (fade/slide, 150–250ms transitions)
+	•	Buttons: black/white with inverted hover
+	•	Rounded corners: very subtle (6–10px) OR sharp corners (choose one, keep consistent)
+
+Imagery:
+	•	Black & white photography (architecture, interiors, city, clean workspaces)
+	•	Use 1 strong hero visual max per page
+	•	Portfolio thumbnails can be monochrome mockups
+
+⸻
+
+4) Header + navigation (global)
+
+Sticky header with:
+	•	Left: Apex Partners logo / wordmark
+	•	Right menu: Home, About, Services, Portfolio, Pricing, Contact
+	•	CTA button: “Request a Quote” (links to Contact)
+
+Mobile: hamburger menu, CTA visible.
+
+⸻
+
+5) Footer (global)
+
+Include:
+	•	Short statement: “Apex Partners builds premium websites for brands that want to look sharp and convert.”
+	•	Quick links
+	•	Contact details (placeholder)
+	•	Social icons: Instagram, LinkedIn
+	•	Copyright
+
+⸻
+
+HOME PAGE (full layout + copy)
+
+Hero section (above the fold)
+
+Headline:
+“Luxury websites built to convert.”
+
+Subheadline:
+“Apex Partners designs and develops websites—from clean multi-page builds to full-service platforms with admin panels—tailored for restaurants, barbers, and modern brands.”
+
+Buttons:
+	•	Primary: Request a Quote
+	•	Secondary: View Work
+
+Hero visuals:
+Black background with subtle texture OR monochrome image overlay.
+
+Quick highlights (small text row):
+	•	“Fast turnaround”
+	•	“Mobile-first”
+	•	“Premium design”
+	•	“Built for growth”
+
+⸻
+
+Trust bar
+
+Row of muted monochrome placeholders:
+“Trusted by: Client One • Client Two • Client Three • Client Four • Client Five”
+
+(Replace later with real logos.)
+
+⸻
+
+Services snapshot (cards)
+
+Create 6 luxury-style cards:
+	1.	Starter Websites
+“Clean, professional multi-page sites for instant credibility.”
+	2.	Business Websites
+“High-converting sites built to generate calls, bookings, and enquiries.”
+	3.	Restaurant Websites
+“Menus, galleries, maps, hours—built to look premium and load fast.”
+	4.	Barber / Salon Websites
+“Modern visuals, service lists, social proof—built for local searches.”
+	5.	E-Commerce
+“Product pages, collections, payments—designed for conversion.”
+	6.	Full-Service Platforms
+“Custom builds with dashboards, admin panels, and scalable features.”
+
+Each card has a “Learn more” link to Services.
+
+⸻
+
+Featured work (portfolio preview)
+
+Show 3 featured projects with thumbnails (placeholders ok):
+	•	Noir Bistro — Restaurant Website
+	•	Crown Cut Studio — Barber Website
+	•	Silverline Studio — Business Website
+
+Each item includes:
+	•	Short 1-line result: “Premium redesign + mobile speed improvements.”
+	•	Button: “View project”
+
+⸻
+
+Why Apex Partners (3-column)
+
+Design-led. Development-strong. Business-focused.
+	•	Luxury design that looks expensive and feels modern
+	•	Clean code / solid builds that load fast and work everywhere
+	•	Conversion-focused layout built to drive enquiries & sales
+
+⸻
+
+Process section (4 steps)
+	1.	Discovery — goals, audience, competitors
+	2.	Design — premium UI, structure, content flow
+	3.	Build — responsive development + optimizations
+	4.	Launch — testing, handover, optional ongoing support
+
+⸻
+
+Testimonials (placeholders)
+
+Add 3 quotes:
+	•	“Apex Partners delivered exactly what we wanted—clean, premium, and fast.”
+	•	“We started getting more enquiries within the first week.”
+	•	“Professional communication and top-tier work.”
+
+Include: Name, business type (Restaurant Owner / Barber / Founder)
+
+⸻
+
+CTA band (final home section)
+
+Headline: “Ready to upgrade your online presence?”
+Text: “Tell us what you need—simple website or full platform. We’ll recommend the best package.”
+Button: Request a Quote
+Secondary: “Email us”
+
+⸻
+
+ABOUT PAGE
+
+About intro
+
+Headline: “Built for brands that want to look premium.”
+Copy:
+“Apex Partners is a boutique web design & development agency. We build everything from simple brochure websites to full-service platforms with admin dashboards—crafted with a luxury look and business-first thinking.”
+
+What we believe (values)
+	•	Clarity — simple structure, clear message
+	•	Quality — premium design and clean development
+	•	Speed — fast performance, fast communication
+	•	Partnership — long-term mindset, honest advice
+
+Who we work with
+
+Restaurants, barbers, salons, local services, and modern brands that want a premium online presence.
+
+CTA
+
+Button: “Request a Quote”
+
+⸻
+
+SERVICES PAGE (detailed service blocks)
+
+Create these sections with “What’s included” and “Best for”:
+
+1) Starter Website (Basic)
+
+Best for: new businesses, personal brands
+Includes:
+	•	1–3 pages (Home, About, Contact)
+	•	Mobile responsive design
+	•	Basic SEO structure
+	•	Contact form (front-end)
+	•	Social links + Google map embed
+Outcome: “A clean online presence that looks professional.”
+
+2) Business Website (Standard)
+
+Best for: service businesses that need leads
+Includes:
+	•	4–6 pages
+	•	Strong homepage layout for conversions
+	•	Service sections + FAQs
+	•	Speed optimization
+	•	On-page SEO foundations
+Outcome: “A premium site designed to generate enquiries.”
+
+3) Restaurant Website
+
+Best for: restaurants, cafés, takeaways
+Includes:
+	•	Menu page layout (PDF or styled sections)
+	•	Gallery + ambience visuals
+	•	Map, hours, call-to-action buttons
+	•	“Book / Order” buttons (link out to third-party)
+Outcome: “A luxury feel that matches your venue.”
+
+4) Barber / Salon Website
+
+Best for: barbers, salons, grooming studios
+Includes:
+	•	Services + pricing layout
+	•	Gallery + testimonials
+	•	Strong local presence design
+	•	“Book now” button (link out to booking platform)
+Outcome: “A sharp look that builds trust instantly.”
+
+5) E-Commerce Website
+
+Best for: brands selling products online
+Includes:
+	•	Storefront design
+	•	Product + collection pages
+	•	Conversion-focused UX
+	•	Platform setup (Shopify/Woo/etc.)
+Outcome: “Designed to sell—clean and premium.”
+
+6) Full-Service Platform (Custom + Admin Panel)
+
+Best for: businesses needing systems
+Includes:
+	•	Custom features (dashboards, portals, admin tools)
+	•	Database-backed functionality (note: not on this agency site)
+	•	Scalable architecture
+Outcome: “A platform built for growth.”
+
+Add-ons section (optional):
+	•	Maintenance & updates
+	•	SEO
+	•	Copywriting
+	•	Branding / logos
+	•	Hosting guidance
+
+⸻
+
+PROCESS PAGE
+
+Luxury timeline style with clear steps:
+	1.	Kickoff & Discovery
+	2.	Wireframe & Structure
+	3.	High-end Design
+	4.	Development & Testing
+	5.	Launch & Support
+
+Add: “Typical timelines: 1–2 weeks (starter), 2–4 weeks (standard), custom (scope-based).”
+
+⸻
+
+PRICING PAGE (Starting From)
+
+Important: keep it “starting from” so you’re not locked in.
+	•	Starter Website — Starting from €XXX
+	•	Standard Business Website — Starting from €XXX
+	•	Restaurant Website — Starting from €XXX
+	•	Barber / Salon Website — Starting from €XXX
+	•	E-Commerce — Starting from €XXX
+	•	Custom Platform / Admin Panel — Quote-based
+
+Add a note:
+“Final pricing depends on pages, content, features, and timelines.”
+
+CTA: “Request a Quote”
+
+⸻
+
+PORTFOLIO PAGE
+
+Grid of 6–12 projects with filters:
+	•	Restaurants
+	•	Barbers/Salons
+	•	Business
+	•	E-Commerce
+	•	Platforms
+
+Each project opens a case study section:
+
+Case study layout:
+	•	Overview
+	•	Goals
+	•	What we delivered
+	•	Result
+	•	Screenshots
+
+Placeholder projects:
+	•	Noir Bistro — Restaurant Website
+	•	Crown Cut Studio — Barber Website
+	•	Maison Café — Local Restaurant
+	•	Northmark Services — Business Website
+	•	Aurelia Skincare — E-Commerce
+	•	Silverline Studio — Premium Brand Site
+	•	District Dental — Local Service Site
+	•	Atlas Gym — Landing + Membership Funnel
+
+⸻
+
+CONTACT PAGE (no backend)
+
+Luxury contact layout with a simple form.
+
+Headline: “Request a quote.”
+Text: “Tell us what you need. Simple site or full platform—we’ll guide you.”
+
+Form fields:
+	•	Full name
+	•	Email
+	•	Business name
+	•	Industry (dropdown: Restaurant / Barber / Salon / Local Service / E-Commerce / Other)
+	•	Budget range (dropdown)
+	•	Timeline (dropdown)
+	•	Message
+Button: “Send enquiry”
+
+If needed, set form action to mailto placeholder:
+hello@apexpartners.com
+
+Add contact details + social + location.
+
+⸻
+
+FAQ PAGE (recommended)
+
+Add 8 FAQs:
+	1.	How long does a website take?
+	2.	What do you need from me to start?
+	3.	Do you provide hosting and domains?
+	4.	Can you redesign my current site?
+	5.	Do you offer maintenance?
+	6.	Can you build booking / ordering systems?
+	7.	Do you do admin panels and dashboards?
+	8.	How do payments work?
+
+⸻
+
+LEGAL PAGE (basic)
+	•	Privacy policy template text (simple, standard)
+	•	Mention cookies/analytics if used
+
+⸻
+
+SEO + performance requirements (tell the builder)
+	•	Mobile-first responsive
+	•	Optimized images + fast loading
+	•	On-page SEO structure (H1/H2)
+	•	Meta title + description per page
+	•	Open Graph image (black/white branded)
+	•	Accessibility: good contrast, keyboard focus states
+
+⸻
+
+Content rules (for consistent luxury copy)
+	•	Short sentences
+	•	No fluff like “we’re passionate”
+	•	Use outcomes: “built to convert”, “premium presence”, “fast + clean”
+
+Extra tagline options (choose 1 and use site-wide):
+	•	“Premium websites for modern brands.”
+	•	“Quietly premium. Built to perform.”
+	•	“Luxury design. Clean development.”
+
+⸻
+
+Replace these placeholders after it generates
+	•	Your email / phone / city
+	•	Pricing amounts
+	•	Portfolio screenshots
+	•	Real testimonials
+
+## Current User Request
+FIX THE THEME TOGGLE (MAKE IT ACTUALLY CHANGE THE SITE)
+The “Dark Mode” button currently only changes text.
+Make it switch the entire website theme (colors) globally.
+What to implement
+Create a global theme state called theme with 2 values:
+dark (default)
+light
+Connect the header button to that state:
+On click: toggle theme from dark ↔ light
+Button label should reflect the next action:
+If theme is dark, show “Light Mode”
+If theme is light, show “Dark Mode”
+Apply the theme state to the entire site design system, not individual elements:
+All backgrounds, text colors, borders, buttons, cards must use theme variables/tokens.
+Do NOT use hard-coded colors like #000 or #fff directly on sections/cards.
+Everything should reference tokens like: Background, Surface, Text, Muted text, Border, Primary button.
+Make the theme persist:
+Save the user’s choice so it stays after refresh + across pages.
+Theme tokens to use (must be global)
+Dark (default)
+Background: #0B0B0B
+Surface/cards: #121212
+Text: #F5F5F5
+Muted text: #B7B7B7
+Border: #242424
+Primary button: white background + black text
+Light
+Background: #F2F2F0 (NOT pure white)
+Surface/cards: #FFFFFF
+Text: #0B0B0B
+Muted text: #545454
+Border: #D9D9D4
+Primary button: black background + white text
+IMPORTANT: Apply it correctly
+Every section background must be set to Background token
+Every card must be set to Surface token
+Every paragraph must use Muted text token
+Every border line must use Border token
+Buttons must reference Primary / Secondary button tokens
+If any element is set to a fixed color, the theme toggle will not change it.
+If the builder supports “components/variants”
+Do it like this:
+Create a Site Theme component with 2 variants: Dark and Light
+Wrap the whole page layout in it
+Theme toggle button switches the variant globally across all pages
+Quick success test
+When I click the toggle:
+Background should flip dark ↔ light instantly
+Cards should flip too
+Text should invert properly
+The change should remain when I go to another page
+
+Start by running the startup sequence, then pick the next feature to implement.
+
+## AI Integration (LaunchPulse AI Proxy)
+
+This project has AI integration enabled. Use the LaunchPulse AI wrapper for all AI/LLM operations.
+
+### ⚠️ CRITICAL CONSTRAINTS - DO NOT VIOLATE
+- **DO NOT** run `npm install openai` or any AI SDK
+- **DO NOT** add OPENAI_API_KEY or any AI provider keys to .env
+
+**WHY**: AI is ALREADY configured through LaunchPulse proxy.
+
+### Available AI Components
+- **./__create/ai** - OpenAI-compatible API wrapper
+- **./hooks/useAI** - Hooks: `useChat()` and `useAsk()`
+
+### Usage
+```typescript
+import { ai } from './__create/ai';
+const answer = await ai.ask('Question here');
+
+import { useChat } from './hooks/useAI';
+const { messages, send } = useChat();
+```
+
+### Environment Variables (Auto-Injected)
+- `VITE_LAUNCHPULSE_AI_KEY`
+- `VITE_LAUNCHPULSE_PROJECT_ID`
+- `VITE_LAUNCHPULSE_API_URL`
+
+
+## Database Integration (PostgreSQL via OpenCode Tools)
+
+This project has a PostgreSQL database connected. You have access to database tools:
+
+### Available Database Tools
+- **query_database** - Execute SQL queries (SELECT, INSERT, UPDATE, DELETE). Returns rows and row count.
+- **list_tables** - List all tables in the public schema
+- **describe_table** - Get column information for a specific table (name, type, nullable, default)
+
+### Usage Examples
+```
+// List all tables
+Use the list_tables tool
+
+// Describe a table
+Use the describe_table tool with table_name: "users"
+
+// Run a query
+Use the query_database tool with sql: "SELECT * FROM users LIMIT 5"
+```
+
+### Database Info
+- Database: app_apex_partners_luxury_web_design_1771019097883
+- Host: ep-cool-sky-ahreczza.c-3.us-east-1.aws.neon.tech
+
+### Schema & Initialization (Generated Apps)
+- Schema file (from backend boilerplate): `/app/backend/db.sql`
+- Apply schema: `cd /app/backend && node initdb.js` (uses DATABASE_URL)
+- Add queries/endpoints in `/app/backend/server.ts` using the existing `pool` from `pg`
+
+### ⚠️ IMPORTANT
+- Always use parameterized queries for user input to prevent SQL injection
+- The database connection uses the project's DATABASE_URL (already configured)
+- These tools connect directly to the user's Neon PostgreSQL database
