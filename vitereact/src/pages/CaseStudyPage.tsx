@@ -104,7 +104,7 @@ const CaseStudyPage: React.FC = () => {
           <div>
             <h2 className="text-2xl font-serif font-semibold mb-6">Screenshots</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {project.screenshots.map((screenshot, index) => (
+              {project.screenshots.map((_screenshot, index) => (
                 <div
                   key={index}
                   className="aspect-video bg-apex-border"

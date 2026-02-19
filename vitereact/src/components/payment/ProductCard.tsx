@@ -26,7 +26,6 @@ interface ProductCardProps {
  * Product display card with integrated checkout
  */
 export const ProductCard: React.FC<ProductCardProps> = ({
-  id,
   name,
   description,
   price,
